@@ -8,7 +8,7 @@ MAINTAINER Jorge de la Cruz <jorgedlcruz@gmail.com>
 
 RUN echo "resolvconf resolvconf/linkify-resolvconf boolean false" | debconf-set-selections
 
-RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get -y install \
+RUN apt update && DEBIAN_FRONTEND=noninteractive apt install -y \
   wget \
   dialog \
   openssh-client \
