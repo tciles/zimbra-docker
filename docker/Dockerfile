@@ -4,7 +4,8 @@
 # Created by Jorge de la Cruz
 #################################################################
 FROM ubuntu:16.04
-MAINTAINER Jorge de la Cruz <jorgedlcruz@gmail.com>
+# LABEL MAINTAINER "Jorge de la Cruz <jorgedlcruz@gmail.com>"
+LABEL MAINTAINER "Thomas CILES <tciles@gmail.com>"
 
 RUN echo "resolvconf resolvconf/linkify-resolvconf boolean false" | debconf-set-selections
 
